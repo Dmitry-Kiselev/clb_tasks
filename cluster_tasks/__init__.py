@@ -10,3 +10,6 @@ def add(x ,y):
 def mul(x ,y):
     print('Task mul called with args: {}, {}'.format(x, y))
     return x * y
+
+
+__tasks__ = [add, mul]

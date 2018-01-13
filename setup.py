@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='cluster_tasks',
-      version='0.1',
+      version='0.2',
       description='package with simple tasks',
       author='Dmitry Kiselev',
       author_email='kdem27@gmail.com',

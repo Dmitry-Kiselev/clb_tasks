@@ -1,11 +1,18 @@
-def add(x:int ,y:int):
+__tasks__ = []
+
+
+def register(f):
+    __tasks__.append(f)
+    return f
+
+
+@register
+def add(x: int, y: int):
     print('Task add called with args: {}, {}'.format(x, y))
     return x + y
 
 
-def mul(x:int ,y:int):
+@register
+def mul(x: int, y: int):
     print('Task mul called with args: {}, {}'.format(x, y))
     return x * y
-
-
-__tasks__ = [add, mul]
